@@ -24,8 +24,8 @@
     
     <h1 class="text-center">BadWords</h1>
 
-    <div class="container border border-primary">
-
+    <div class="container p-3 border border-primary">
+    
         <div class="text mb-3">
 
             <span class="fw-bold">Testo inserito:</span>
@@ -41,7 +41,7 @@
 
         <div class="text-censored">
             
-            <span class="fw-bold">Testo inserito:</span>
+            <span class="fw-bold">Testo censurato:</span>
             <p class ="m-0">
                 <?php 
                     echo $censored_text;

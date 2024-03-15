@@ -22,23 +22,26 @@
 
 <body>
     
-    <div class="container">
+    <h1 class="text-center">BadWords</h1>
+    
+    <div class="container border border-primary p-3">
 
-        <h1 class="text-center">BadWords</h1>
+        <form action="results.php" class="row row-gap-3">
 
-        <form action="results.php" class="d-flex gap-2">
-
-            <div>
-                <label for="">Inserisci un testo</label>
-                <input type="text" id="user-text" name="user-text" placeholder="Inserisci qui">
+            <div class="col-12">
+                <label for="">Inserisci un testo:</label>
+                <!-- <input type="text" id="user-text" name="user-text" placeholder="Inserisci qui"> -->
+                <textarea class="form-control w-100" id="user-text" name="user-text" rows="3"></textarea>
             </div>
 
-            <div>
-                <label for="">Inserisci la parola da censuare</label>
+            <div class="col-6">
+                <label for="">Inserisci la parola da censuare:</label>
                 <input type="text" id="user-word" name="user-word" placeholder="Inserisci qui">
             </div>
 
-            <input type="submit">
+            <div class="row">
+                <input type="submit" class="col-2 offset-5 btn btn-outline-primary">
+            </div>
         
         </form>
 
