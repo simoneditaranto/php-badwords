@@ -1,8 +1,9 @@
 <?php
 
     $text = $_GET['user-text'];
+    $word = $_GET['user-word'];
 
-    $text_explode = explode(' ', $text);
+    $censored_text = str_ireplace($word, '***', $text);
 
 ?>
 
@@ -25,13 +26,29 @@
 
     <div class="container border border-primary">
 
-        <div class="text">
-            <span>Testo inserito:</span>
-            <p>
+        <div class="text mb-3">
+
+            <span class="fw-bold">Testo inserito:</span>
+            <p class ="m-0">
                 <?php 
-                    echo $text . "<br> Lunghezza testo: " . strlen($text) . " caratteri";
+                    echo $text;
                 ?>
             </p>
+            <span class="fw-bold">Lunghezza testo:</span>
+            <span> <?php echo strlen($text); ?> </span>
+
+        </div>
+
+        <div class="text-censored">
+            
+            <span class="fw-bold">Testo inserito:</span>
+            <p class ="m-0">
+                <?php 
+                    echo $censored_text;
+                ?>
+            </p>
+            <span class="fw-bold">Lunghezza testo:</span>
+            <span> <?php echo strlen($censored_text); ?> </span>
 
         </div>
 

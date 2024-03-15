@@ -33,6 +33,11 @@
                 <input type="text" id="user-text" name="user-text" placeholder="Inserisci qui">
             </div>
 
+            <div>
+                <label for="">Inserisci la parola da censuare</label>
+                <input type="text" id="user-word" name="user-word" placeholder="Inserisci qui">
+            </div>
+
             <input type="submit">
         
         </form>
